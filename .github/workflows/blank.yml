@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://polarismesh/polaris-console:v1.15.0 docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/polaris-console:v1.15.0
+         skopeo copy docker://polarismesh/polaris-prometheus:v1.18.1 docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/polaris-prometheus:v1.18.1
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
