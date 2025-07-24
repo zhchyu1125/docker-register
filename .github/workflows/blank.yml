@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://sonatype/nexus3:latest docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/sonatype-nexus3:latest
+         skopeo copy docker://gitea/gitea:1.24.2 docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/gitea:1.24.2
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
