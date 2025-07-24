@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://gitea/act_runner:0.2.11 docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/act_runner:0.2.11
+         skopeo copy docker://gitea/runner-images:ubuntu-latest docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/runner-images:ubuntu-latest
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
