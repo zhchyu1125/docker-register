@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://jenkins/jenkins:2.522-jdk21 docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/jenkins:2.522-jdk21
+         skopeo copy docker://mrvautin/adminmongo docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/mrvautin-adminmongo
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
