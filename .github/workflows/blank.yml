@@ -27,5 +27,5 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://woodpeckerci/woodpecker-server:v3 docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/woodpecker-server:v3
+         skopeo copy docker://woodpeckerci/woodpecker-agent:v3 docker://registry.cn-hangzhou.aliyuncs.com/zhchyu/woodpecker-agent:v3
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
